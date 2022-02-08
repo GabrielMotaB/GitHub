@@ -11,6 +11,7 @@ public class GitHub {
 		System.out.println("maior Valor= "+maior);
 		System.out.println("menor Valor= "+menor);
 		System.out.println("fechando o projeto");
+		System.ou.prinlin("alterado no GitHub");
 	}
 
 	public static void preencher(int[] v) {
