@@ -85,5 +85,42 @@ public class VetorObjeto2 {
 
 }
 
+-----------------------------------------------------------------------------------------
+
+public class Aluno {
+
+	//Atributos
+	String nome;
+	int rm;
+	
+	//método construtor-->Não possui nem void 
+	public Aluno(String nome, int rm) {
+		this.nome = nome;
+		this.rm =rm;
+		
+	}
+	
+}
+
+public class TesteAluno {
+
+	public static void main(String[] args) {
+		
+		Aluno[] aluno = new Aluno[3];
+
+		// gerando  objetos do tipo alno
+		aluno[0] = new Aluno ("Gabriel",1);
+		aluno[1] = new Aluno ("Jorge",2);
+		aluno[2] = new Aluno ("Alberto", 3);
+		
+		//impressão dos dados armazenados no vetor 
+		for (int i = 0; i < aluno.length; i++) {
+			System.out.println(aluno[i].nome);
+		}
+	}
+
+}
+
+--------------------------------------------------------------------------------------
 
 
