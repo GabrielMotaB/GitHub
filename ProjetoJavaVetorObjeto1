@@ -1,0 +1,89 @@
+1) Fazer um programa para preencher um vetor de 10 posições com números inteiros
+--> Imprimir o maior valor
+
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class VetorObjeto {
+
+	public static void main(String[] args) {
+
+		int[] x = new int[10];
+		preencher(x);
+		imprimir(x);
+		int maior = maiorValor(x);
+		System.out.println("Maior Valor="+maior);
+
+	}
+
+	public static void imprimir(int[] x) {
+		for(int i: x) {
+			System.out.println(i);
+		}
+		
+	}
+
+	public static int maiorValor(int[] x) {
+		int aux = x[0];
+
+		for (int i = 0; i < x.length; i++) {
+			if (x[i] > aux) {
+				aux = x[i];
+			}
+		}
+		return aux;
+	}
+
+	public static void preencher(int[] x) {
+
+		Random gerador = new Random();// método construtor
+		for (int i = 0; i < x.length; i++) {
+			x[i] = gerador.nextInt(50);
+		}
+
+	}
+
+}
+
+--------------------------------------------------------------------------------------------
+
+
+
+public class VetorObjeto2 {
+
+	public static void main(String[] args) {
+
+		int[] x = { 10, 20, 30, 40, 50 };
+		double[] y = { 12.5, 24.5, 36.5, 48.5 };
+		String[] z = { "Jorge", "Jaime", "Jhonatan" };
+		imprimirInt(x);
+		imprimirDouble(y);
+		ImprimirString(z);
+	}
+
+	private static void ImprimirString(String[] z) {
+		for (String string : z) {
+			System.out.println(string);
+		}
+
+	}
+
+	private static void imprimirDouble(double[] y) {
+		for (double d : y) {
+			System.out.println(d);
+		}
+
+	}
+
+	private static void imprimirInt(int[] x) {
+		for (int i : x) {
+			System.out.println(i);
+		}
+
+	}
+
+}
+
+
+
