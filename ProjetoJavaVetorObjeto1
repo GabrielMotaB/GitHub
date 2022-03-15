@@ -134,3 +134,40 @@ public class TesteAluno {
       -Depositar
       -Consultar Saldo
       -Finalizar
+      
+      
+      
+      public class Conta {
+
+	String nomeCorrentista;
+	int cpf;
+	double saldo;
+
+	// métodos -->sacar(apenas se tiver saldo
+	// disponivel)//-->depositar//-->consultar saldo
+	public Conta(String nomeCorrentista, int cpf) {
+		this.cpf = cpf;
+		this.nomeCorrentista = nomeCorrentista;
+
+	}
+
+	// método para sacar um valor da conta
+	public void sacar(double valor) {
+		if (saldo >= valor) {
+			saldo = saldo - valor;
+		}
+	}
+
+	// método para depositar
+
+	public void depositar(double valor) {
+		saldo = saldo + valor;
+
+	}
+
+	public double consultar(double saldo) {
+
+		return saldo;
+	}
+
+}
