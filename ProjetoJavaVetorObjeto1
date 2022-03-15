@@ -123,4 +123,14 @@ public class TesteAluno {
 
 --------------------------------------------------------------------------------------
 
-
+4)Projeto conta bancária 
+1-)Criar uma classe chamada Conta com os seguintes atributos --> Nome do correntista,CPF,saldo
+-->métodos)-Sacar somente se houver saldo disponível
+           -Depositar
+	  
+2-)Criar uma aplicação que exiba para o usuário o seguinte menu de opções:
+      -Abrir Conta
+      -Sacar
+      -Depositar
+      -Consultar Saldo
+      -Finalizar
